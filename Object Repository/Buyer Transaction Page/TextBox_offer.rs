@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_offer</name>
+   <name>TextBox_offer</name>
    <tag></tag>
    <elementGuidId>6c8f4c9e-04cf-40ea-9967-1df72436e7b9</elementGuidId>
    <selectorCollection>
