@@ -6,15 +6,35 @@
    <elementGuidId>beaaf386-5c82-4b1c-8a49-e2680f60f140</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='products']/div/a/div</value>
+         <key>BASIC</key>
+         <value>//*[(text() = '
+      
+
+    
+      NmJEU
+      Hobi
+      Rp 0
+    
+  ' or . = '
+      
+
+    
+      NmJEU
+      Hobi
+      Rp 0
+    
+  ')]</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>div.card.px-0.border-0.shadow.h-100.pb-4.rounded-4</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@class='col-12 col-md-4 col-lg-3'][1]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
@@ -29,7 +49,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>1902d671-eba6-4b30-802d-794535eaadea</webElementGuid>
+      <webElementGuid>92601cd4-987d-47d4-8141-742a8bf468dc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +57,7 @@
       <name>class</name>
       <type>Main</type>
       <value>card px-0 border-0 shadow h-100 pb-4 rounded-4</value>
-      <webElementGuid>7b8b04bd-1d71-4f5c-9b1b-662b0b689fa1</webElementGuid>
+      <webElementGuid>8f2ff386-313a-4370-8fba-33908a1cc70f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +73,7 @@
       Rp 0
     
   </value>
-      <webElementGuid>ea7111b0-a32e-4545-8c0d-778bae5bcc81</webElementGuid>
+      <webElementGuid>3ccbee3c-15af-484d-a1b6-014bbe30cfd7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +81,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;products&quot;)/div[@class=&quot;col-12 col-md-4 col-lg-3&quot;]/a[@class=&quot;product-card&quot;]/div[@class=&quot;card px-0 border-0 shadow h-100 pb-4 rounded-4&quot;]</value>
-      <webElementGuid>912bd0f5-6789-4c3d-adf8-c9ce12582a6f</webElementGuid>
+      <webElementGuid>5af69f04-ed20-4c37-bafc-286bbbe67021</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -69,7 +89,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='products']/div/a/div</value>
-      <webElementGuid>d21e5419-1569-41b3-8ceb-aaf23bc78b08</webElementGuid>
+      <webElementGuid>34165e98-ffc2-4adf-b331-f40c799861b7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +97,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/a/div</value>
-      <webElementGuid>f3d7db4b-8ae6-4066-b87d-bfed949a152f</webElementGuid>
+      <webElementGuid>2b96879b-4528-42f0-808b-7c73d231c8fb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,6 +121,6 @@
       Rp 0
     
   ')]</value>
-      <webElementGuid>992ce836-bc46-4d35-ab52-59821ce2214f</webElementGuid>
+      <webElementGuid>0318a640-d6d2-44a8-8fbf-9db2da70cebe</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
