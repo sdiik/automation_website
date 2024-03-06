@@ -6,15 +6,19 @@
    <elementGuidId>81e5c2a0-9203-4d0f-9510-17c1b8f2dcc6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.card.px-0.border-0.shadow.h-100.pb-4.rounded-4</value>
+         <key>BASIC</key>
+         <value>/html[1]/body[1]/section[@class=&quot;pt-5 mt-5&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;row my-5&quot;]/div[@class=&quot;col-12 col-lg-9 mt-5 mt-lg-0&quot;]/div[@class=&quot;row g-4&quot;]/div[@class=&quot;col-12 col-lg-4&quot;]/a[@class=&quot;product-card&quot;]/div[@class=&quot;card px-0 border-0 shadow h-100 pb-4 rounded-4&quot;]</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>(.//*[normalize-space(text()) and normalize-space(.)='Tambah Produk'])[1]/following::div[2]</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.card.px-0.border-0.shadow.h-100.pb-4.rounded-4</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>3b8fbff7-ef12-4ef2-b735-a8e90820a86e</webElementGuid>
+      <webElementGuid>38d7fe11-3120-457c-9550-cc6042509cfa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,10 +34,10 @@
       <name>class</name>
       <type>Main</type>
       <value>card px-0 border-0 shadow h-100 pb-4 rounded-4</value>
-      <webElementGuid>8867d198-cdba-4fc7-9bf8-bfe639b9cb07</webElementGuid>
+      <webElementGuid>ef673541-227a-4cbf-b5bc-928f328407ef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
@@ -46,7 +50,7 @@
       Rp 123
     
   </value>
-      <webElementGuid>7b65eb31-aadb-40cd-84bd-09047b42b1ac</webElementGuid>
+      <webElementGuid>17bebbe3-323a-48db-8b1d-f2389a098747</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/section[@class=&quot;pt-5 mt-5&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;row my-5&quot;]/div[@class=&quot;col-12 col-lg-9 mt-5 mt-lg-0&quot;]/div[@class=&quot;row g-4&quot;]/div[@class=&quot;col-12 col-lg-4&quot;]/a[@class=&quot;product-card&quot;]/div[@class=&quot;card px-0 border-0 shadow h-100 pb-4 rounded-4&quot;]</value>
-      <webElementGuid>35c6aa06-3cb9-41f9-bdde-4d041e612fd4</webElementGuid>
+      <webElementGuid>cdc409ba-27de-43d9-858d-a83ac6f14a21</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Tambah Produk'])[1]/following::div[2]</value>
-      <webElementGuid>788ada2f-c072-4d84-a7a5-04dae77df372</webElementGuid>
+      <webElementGuid>01912208-e13f-480a-8d1d-bae7c4718a32</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Terjual'])[1]/following::div[6]</value>
-      <webElementGuid>46a7a8ee-e390-4379-853b-febb5d42b51a</webElementGuid>
+      <webElementGuid>2459d5be-08d8-4f2f-858a-27b4b32b930e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/a/div</value>
-      <webElementGuid>ad8fd29b-a839-467f-bbe5-023eb92e52e4</webElementGuid>
+      <webElementGuid>c2f96cb1-70d1-41db-997c-cb3d958999f6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +106,6 @@
       Rp 123
     
   ')]</value>
-      <webElementGuid>3cc4cb0d-a7b6-4243-bf74-0d37217ac9e4</webElementGuid>
+      <webElementGuid>132a4e88-6318-4286-ae35-15cf40327cd0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
