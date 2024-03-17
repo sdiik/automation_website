@@ -53,4 +53,26 @@ public class Register {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Homepage/btn_jual'), 0)
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Notification page/btn_notification'), 0)
 	}
+
+	@When("user fills up all required fields except (.*) on the register page")
+	public void user_fills_up_all_required_fields_except_on_the_register_page(String field) {
+		if(field=="name field") {
+			int RandomNumber;
+			RandomNumber = (int)(Math.random()*1000)
+			WebUI.setText(findTestObject('Object Repository/Register page/TextBox_email'), 'kirana'+RandomNumber+'@gmail.com')
+			WebUI.setText(findTestObject('Object Repository/Register page/TextBox_password'), 'Testing123')
+		}else if(field=="email field") {
+			WebUI.setText(findTestObject('Object Repository/Register page/TextBox_name'), 'Testing1234')
+			WebUI.setText(findTestObject('Object Repository/Register page/TextBox_password'), 'Testing123')
+		}
+	}
+
+	@Then("(.*) will be received by user on the register page")
+	public void will_be_received_by_user_on_the_register_page(String message) {
+		if(message=="warning message name") {
+			WebUI.getAttribute(findTestObject('Object Repository/Register page/TextBox_name'), 'validationMessage')
+		}else if(message=="warning message email") {
+			WebUI.getAttribute(findTestObject('Object Repository/Register page/TextBox_email'), 'validationMessage')
+		}
+	}
 }
