@@ -154,5 +154,52 @@ class CRUD_product {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Edit product page/text_errorMessage_namaProduk'), 0)
 		WebUI.closeBrowser()
 	}
-}
+	@Given("user go to Daftar Jual Saya page and has at least 1 published product")
+	public void user_go_to_Daftar_Jual_Saya_page_and_has_at_least_1_published_product() {
+		WebUI.click(findTestObject('Object Repository/Homepage/btn_daftarJual'))
 
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Daftar Jual Page/text_daftarJualSaya'),0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Daftar Jual Page/text_daftarJualSaya'),0)
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Daftar Jual Page/btn_edit'),0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Daftar Jual Page/btn_edit'),0)
+
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Daftar Jual Page/btn_productCard'),0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Daftar Jual Page/btn_productCard'),0)
+	}
+
+	@When("user click one of the product in Daftar Jual Saya page and click Delete button")
+	public void user_click_one_of_the_product_in_Daftar_Jual_Saya_page_and_click_Delete_button() {
+		WebUI.click(findTestObject('Object Repository/Daftar Jual Page/btn_productCard'))
+		WebUI.click(findTestObject('Object Repository/Product Details Page/btn_delete'))
+	}
+
+	@When("user click one of the desired product in Homepage")
+	public void user_click_one_of_the_desired_product_in_Homepage() {
+		WebUI.click(findTestObject('Object Repository/Homepage/card_product'))
+	}
+
+	@Then("product will be deleted and user will be redirected back to Daftar Jual Saya page")
+	public void product_will_be_deleted_and_user_will_be_redirected_back_to_Daftar_Jual_Saya_page() {
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Daftar Jual Page/text_daftarJualSaya'),0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Daftar Jual Page/text_daftarJualSaya'),0)
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Daftar Jual Page/btn_edit'),0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Daftar Jual Page/btn_edit'),0)
+
+		WebUI.closeBrowser()
+	}
+
+	@Then("user will be redirected to their desired product details page while the Delete button will not be displayed")
+	public void user_will_be_redirected_to_their_desired_product_details_page_while_the_Delete_button_will_not_be_displayed() {
+		//check if user in product details
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Product Details Page/img_product'), 0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Product Details Page/img_product'), 0)
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Preview page/btn_tertarik'), 0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Preview page/btn_tertarik'), 0)
+
+		//check if product detail don't have delete button
+		WebUI.waitForElementNotPresent(findTestObject('Object Repository/Preview page/btn_delete'), 0)
+		WebUI.verifyElementNotPresent(findTestObject('Object Repository/Preview page/btn_delete'), 0)
+
+		WebUI.closeBrowser()
+	}
+}
