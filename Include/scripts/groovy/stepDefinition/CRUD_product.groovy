@@ -100,6 +100,63 @@ class CRUD_product {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Post Product Page/text_errorMessage_kategori'), 0)
 		WebUI.closeBrowser()
 	}
+	//user can edit product
+	@Given("user has opened edit product page")
+	public void user_has_opened_edit_product_page() {
+		WebUI.click(findTestObject('Object Repository/Homepage/btn_daftarJual'))
+		//redirect to daftar jual page
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Daftar Jual Page/btn_edit'), 0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Daftar Jual Page/btn_edit'), 0)
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Daftar Jual Page/btn_productCard'), 0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Daftar Jual Page/btn_productCard'), 0)
+		WebUI.click(findTestObject('Object Repository/Daftar Jual Page/btn_productCard'))
+		//redirect to product detail page
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Product Details Page/btn_delete'), 0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Product Details Page/btn_delete'), 0)
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Product Details Page/btn_edit'), 0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Product Details Page/btn_edit'), 0)
+		WebUI.click(findTestObject('Object Repository/Product Details Page/btn_edit'))
+		//redirect to edit product page
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Edit product page/btn_terbitkan'), 0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Edit product page/btn_terbitkan'), 0)
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Edit product page/btn_preview'), 0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Edit product page/btn_preview'), 0)
+	}
+
+	@When("user edit valid credential in all required fields and select Terbitkan button in edit product page")
+	public void user_edit_valid_credential_in_all_required_fields_and_select_terbitkan_button_in_edit_product_page() {
+		WebUI.setText(findTestObject('Object Repository/Edit product page/TextBox_namaProduk'), 'capybara')
+		WebUI.setText(findTestObject('Object Repository/Edit product page/TextBox_hargaProduk'), '2000')
+		WebUI.selectOptionByValue(findTestObject('Object Repository/Edit product page/select_pilihKategori'), '3', false)
+		WebUI.setText(findTestObject('Object Repository/Edit product page/TextBox_deskripsiProduk'), 'capybara dijual')
+		WebUI.click(findTestObject('Object Repository/Edit product page/btn_hapusImage'))
+		WebUI.verifyElementNotPresent(findTestObject('Object Repository/Edit product page/btn_hapusImage'), 0)
+		WebUI.uploadFile(findTestObject('Object Repository/Edit product page/img_formImage'), 'C:\\Users\\WINDOWS 10\\Downloads\\sapi.jpg')
+		WebUI.click(findTestObject('Object Repository/Edit product page/btn_terbitkan'))
+	}
+	@Then("user successfully edit product")
+	public void successfully_edit_product() {
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Edit product page/btn_terbitkan'), 0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Edit product page/btn_terbitkan'), 0)
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Edit product page/btn_preview'), 0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Edit product page/btn_preview'), 0)
+	}
+
+	//user can't edit product with name fields blank
+	@When("user edit nama produk field with empty value and select Terbitkan button in edit product page")
+	public void user_edit_nama_produk_field_with_empty_value_and_select_terbitkan_button_in_edit_product_page() {
+		WebUI.setText(findTestObject('Object Repository/Edit product page/TextBox_namaProduk'), '')
+		WebUI.click(findTestObject('Object Repository/Edit product page/btn_terbitkan'))
+	}
+
+	@Then("user will fail save edit product")
+	public void user_will_fail_save_edit_product() {
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Edit product page/text_errorMessage_namaProduk'), 0)
+		WebUI.closeBrowser()
+	}
+}
+
+
 
 	@Given("user go to Daftar Jual Saya page and has at least 1 published product")
 	public void user_go_to_Daftar_Jual_Saya_page_and_has_at_least_1_published_product() {
