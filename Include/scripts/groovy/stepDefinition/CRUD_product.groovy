@@ -154,10 +154,6 @@ class CRUD_product {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Edit product page/text_errorMessage_namaProduk'), 0)
 		WebUI.closeBrowser()
 	}
-}
-
-
-
 	@Given("user go to Daftar Jual Saya page and has at least 1 published product")
 	public void user_go_to_Daftar_Jual_Saya_page_and_has_at_least_1_published_product() {
 		WebUI.click(findTestObject('Object Repository/Homepage/btn_daftarJual'))
