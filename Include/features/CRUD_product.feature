@@ -21,3 +21,14 @@ Feature: CRUD feature
     Given user has opened selling page
     When user input valid credential in all required except in kategori fields and click terbitkan button in selling page
     Then user will fail post new product
+
+	@positive
+  Scenario: TC.WEB.25-User delete their own product
+    Given user go to Daftar Jual Saya page and has at least 1 published product
+    When user click one of the product in Daftar Jual Saya page and click Delete button
+    Then product will be deleted and user will be redirected back to Daftar Jual Saya page
+	
+	@negative
+  Scenario: TC.WEB.26-User tries to delete another users product
+    When user click one of the desired product in Homepage
+    Then user will be redirected to their desired product details page while the Delete button will not be displayed
