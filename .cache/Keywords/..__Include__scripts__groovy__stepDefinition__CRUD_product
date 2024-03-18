@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "9DB1070CD2C6CE5C687F01C18B3BF245",
+  "keywordClasses": [
+    {
+      "name": "stepDefinition.CRUD_product",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}
