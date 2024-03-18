@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "5152BACA49D32A05CB564CC41BABFB11",
+  "keywordClasses": [
+    {
+      "name": "stepDefinition.Dashboard",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}
