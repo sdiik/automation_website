@@ -21,3 +21,15 @@ Feature: CRUD feature
     Given user has opened selling page
     When user input valid credential in all required except in kategori fields and click terbitkan button in selling page
     Then user will fail post new product
+
+  @positive
+  Scenario: TC.WEB.14-User can edit product
+    Given user has opened edit product page
+    When user edit valid credential in all required fields and select Terbitkan button in edit product page
+    Then user will successfully edit product
+
+  @negative
+  Scenario: TC.WEB.15-User edit nama produk field with empty value
+    Given user has opened edit product page
+    When user edit nama produk field with empty value and select Terbitkan button in edit product page
+    Then user will fail save edit product
