@@ -2,7 +2,7 @@
   "keywordFileContentHash": "AC4008C701DE5175039E8CBAA52A15AA",
   "keywordClasses": [
     {
-      "name": "Transaction",
+      "name": "stepDefinition.Transaction",
       "keywordMethods": []
     }
   ],

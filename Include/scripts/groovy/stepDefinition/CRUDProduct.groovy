@@ -44,7 +44,7 @@ import cucumber.api.java.en.When
 
 
 
-class CRUD_product {
+class CRUDProduct {
 	//Post and preview page
 	@Given("user has opened selling page")
 	public void user_has_opened_selling_page() {
