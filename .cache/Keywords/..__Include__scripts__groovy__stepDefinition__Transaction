@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "FADC2979777C291BF89F5D991C752260",
+  "keywordFileContentHash": "AC4008C701DE5175039E8CBAA52A15AA",
   "keywordClasses": [
     {
       "name": "Transaction",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }
