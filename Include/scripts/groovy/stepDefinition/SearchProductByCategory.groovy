@@ -45,6 +45,8 @@ import cucumber.api.java.en.When
 public class SearchProductByCategory {
 	private static TestObject btnVehicle = findTestObject('Object Repository/Category Product Page/btn_venicle_category')
 	private static TestObject btnHobby = findTestObject('Object Repository/Category Product Page/btn_hobby_category')
+	private static TestObject divProducts = findTestObject('Object Repository/Seach Product Page/div_products')
+	private static TestObject divDescriptionProduct = findTestObject('Object Repository/Seach Product Page/div_description_product')
 
 	@Given("user has opened homepage")
 	public void user_has_opened_homepage() {
@@ -68,11 +70,11 @@ public class SearchProductByCategory {
 	@Then("user will successfully get list (.*) products")
 	public void user_will_successfully_get_list_products(String type) {
 		if (type == "hobby" || type == "vehicle") {
-			WebUI.scrollToElement(findTestObject('Object Repository/Seach Product Page/div_products'), 0)
-			WebUI.waitForElementPresent(findTestObject('Object Repository/Seach Product Page/div_products'), 0)
-			WebUI.waitForElementPresent(findTestObject('Object Repository/Seach Product Page/div_description_product'), 0)
-			WebUI.verifyElementPresent(findTestObject('Object Repository/Seach Product Page/div_products'), 0)
-			WebUI.verifyElementPresent(findTestObject('Object Repository/Seach Product Page/div_description_product'), 0)
+			WebUI.scrollToElement(divProducts, 0)
+			WebUI.waitForElementPresent(divProducts, 0)
+			WebUI.waitForElementPresent(divDescriptionProduct, 0)
+			WebUI.verifyElementPresent(divProducts, 0)
+			WebUI.verifyElementPresent(divDescriptionProduct, 0)
 		}
 		WebUI.closeBrowser()
 	}
