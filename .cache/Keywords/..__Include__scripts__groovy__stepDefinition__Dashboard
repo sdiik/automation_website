@@ -1,10 +1,14 @@
 {
+<<<<<<< HEAD
   "keywordFileContentHash": "CE1EAB2877A5E4788CD9243F02CA021A",
+=======
+  "keywordFileContentHash": "50E916D553042396A5575EFD7EC657D2",
+>>>>>>> c874fcb861bbfeb8a848bc0810aea2e5990cbab6
   "keywordClasses": [
     {
       "name": "stepDefinition.Dashboard",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

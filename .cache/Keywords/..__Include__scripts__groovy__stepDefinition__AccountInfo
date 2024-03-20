@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "54FEED526894C52C6ACE24C3F475B09A",
+  "keywordClasses": [
+    {
+      "name": "stepDefinition.AccountInfo",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}
