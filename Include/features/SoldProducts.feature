@@ -1,7 +1,7 @@
 Feature: Web sold product feature
 
-	@Positive
-	Scenario: TC.WEB.31-Seller gets list of product sold
+  @Positive
+  Scenario: TC.WEB.31-Seller gets list of product sold
     Given seller already in list product page
     When seller click sold in list category
     Then seller will successfull gets list of products sold
