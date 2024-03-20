@@ -21,6 +21,7 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.kms.katalon.core.configuration.RunConfiguration
 
 import internal.GlobalVariable
 import cucumber.api.java.en.Given
@@ -79,7 +80,7 @@ public class Transaction {
 			WebUI.waitForElementPresent(findTestObject('Object Repository/Account Info Page/btn_submit'), 0)
 			WebUI.verifyElementPresent(findTestObject('Object Repository/Account Info Page/btn_submit'), 0)
 
-			WebUI.uploadFile(findTestObject('Object Repository/Account Info Page/btn_profilePicture'), 'C:\\Users\\archi_000\\Pictures\\Angsa Kucing.PNG')
+			WebUI.uploadFile(findTestObject('Object Repository/Account Info Page/btn_profilePicture'), RunConfiguration.getProjectDir() + '/Asset/milkcat.PNG')
 			WebUI.setText(findTestObject('Object Repository/Account Info Page/TextArea_nama'), 'Archi Edited')
 			WebUI.selectOptionByValue(findTestObject('Object Repository/Account Info Page/dropdown_kota'), '4', false)
 			WebUI.setText(findTestObject('Object Repository/Account Info Page/TextArea_alamat'), 'Villa Bintaro Indah')
@@ -173,7 +174,7 @@ public class Transaction {
 		WebUI.setText(findTestObject('Object Repository/Post Product Page/TextBox_hargaProduk'), '1000')
 		WebUI.selectOptionByValue(findTestObject('Object Repository/Post Product Page/select_pilihKategori'), '2', false)
 		WebUI.setText(findTestObject('Object Repository/Post Product Page/TextBox_deskripsiProduk'), 'barang bekas')
-		WebUI.uploadFile(findTestObject('Object Repository/Post Product Page/img_formImage'), 'C:\\Users\\archi_000\\Pictures\\milkcat.PNG')
+		WebUI.uploadFile(findTestObject('Object Repository/Post Product Page/img_formImage'), RunConfiguration.getProjectDir() + '/Asset/milkcat.PNG')
 		WebUI.delay(1)
 		WebUI.click(findTestObject('Object Repository/Post Product Page/btn_terbitkan'))
 
