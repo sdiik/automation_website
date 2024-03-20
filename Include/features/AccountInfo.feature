@@ -1,3 +1,4 @@
+@AccountInfo
 Feature: Account Info Feature
 
   @positive

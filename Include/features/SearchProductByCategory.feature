@@ -1,3 +1,4 @@
+@SearchProductByCategory
 Feature: Web get a products by category feature
 
   Scenario Outline: <case_id>-User can filter by <type> the products

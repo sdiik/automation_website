@@ -1,3 +1,4 @@
+@SearchProducts
 Feature: Web get a search products feature
 
   @Positive
