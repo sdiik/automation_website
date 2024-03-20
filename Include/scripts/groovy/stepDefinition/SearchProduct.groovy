@@ -59,6 +59,11 @@ public class SearchProduct {
 		WebUI.setText(inputSearch, 'motor')
 	}
 
+	@When("user input characters in search field")
+	public void user_input_characters_in_search_field() {
+		WebUI.setText(inputSearch, '##')
+	}
+	
 	@When("user enter button in keyboard")
 	public void user_enter_button_in_keyboard() {
 		WebUI.sendKeys(inputSearch, Keys.chord(Keys.ENTER))
@@ -67,6 +72,15 @@ public class SearchProduct {
 
 	@Then("user will successfully get list of products based on the correct keywords")
 	public void user_will_successfully_get_list_of_products_based_on_the_correct_keywords() {
+		WebUI.waitForElementPresent(divProducts, 0)
+		WebUI.waitForElementPresent(divDescriptionProduct, 0)
+		WebUI.verifyElementPresent(divProducts, 3)
+		WebUI.verifyElementPresent(divDescriptionProduct, 3)
+		WebUI.closeBrowser()
+	}
+	
+	@Then("user will unsuccessfull get list of products based on the uncorrect keywords")
+	public void user_will_successfully_get_list_of_products_based_on_the_uncorrect_keywords() {
 		WebUI.waitForElementPresent(divProducts, 0)
 		WebUI.waitForElementPresent(divDescriptionProduct, 0)
 		WebUI.verifyElementPresent(divProducts, 3)
