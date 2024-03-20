@@ -64,8 +64,8 @@ public class Dashboard {
 	@Then("user will be redirect to (.*) page of product listing")
 	public void user_will_be_redirect_to_page_of_product_listing(String page) {
 		if(page=="next") {
-			WebUI.waitForElementPresent(findTestObject('Object Repository/Homepage/card_desc'), 0)
-			WebUI.verifyElementPresent(findTestObject('Object Repository/Homepage/card_desc'), 0)
+			WebUI.waitForElementPresent(findTestObject('Object Repository/Homepage/btn_masuk'), 0)
+			WebUI.verifyElementPresent(findTestObject('Object Repository/Homepage/btn_masuk'), 0)
 		}else if(Pageable=="previous") {
 			WebUI.waitForElementPresent(findTestObject('Object Repository/Homepage/card_desc'), 0)
 			WebUI.verifyElementPresent(findTestObject('Object Repository/Homepage/card_desc'), 0)

@@ -74,5 +74,6 @@ public class Register {
 		}else if(message=="warning message email") {
 			WebUI.getAttribute(findTestObject('Object Repository/Register page/TextBox_email'), 'validationMessage')
 		}
+		WebUI.closeBrowser()
 	}
 }
