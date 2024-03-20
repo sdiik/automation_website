@@ -35,20 +35,20 @@ public class AccountInfo {
 		WebUI.setText(findTestObject('Object Repository/Register page/TextBox_password'), 'testing')
 		WebUI.click(findTestObject('Object Repository/Register page/btn_daftar'))
 	}
-	
+
 	@Given("user can successfully login to the website")
 	public void user_can_successfully_login_to_the_website() {
 		WebUI.openBrowser('https://secondhand.binaracademy.org/users/sign_in')
 		WebUI.setText(findTestObject('Object Repository/Login Page/TextArea_email'),'test@testing.com')
 		WebUI.setText(findTestObject('Object Repository/Login Page/TextArea_password'),'testing')
 		WebUI.click(findTestObject('Object Repository/Login Page/btn_loginCommit'))
-		
+
 		WebUI.waitForElementPresent(findTestObject('Object Repository/Homepage/btn_jual'),0)
 		WebUI.waitForElementPresent(findTestObject('Object Repository/Homepage/btn_profile'),0)
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Homepage/btn_jual'),0)
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Homepage/btn_profile'),0)
 	}
-	
+
 	@Given("user already in the Account Info page from Homepage")
 	public void user_already_in_the_Account_Info_page_from_Homepage() {
 		WebUI.click(findTestObject('Object Repository/Homepage/btn_profile'))
