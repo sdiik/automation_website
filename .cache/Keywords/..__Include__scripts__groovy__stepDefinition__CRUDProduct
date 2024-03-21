@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "42A54BEB65968CC1475D8FA6C023CF66",
+  "keywordFileContentHash": "766B58C8C3CCE58230900DCB8886975C",
   "keywordClasses": [
     {
-      "name": "stepDefinition.CRUDProduct",
+      "name": "CRUDProduct",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

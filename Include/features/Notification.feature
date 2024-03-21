@@ -1,7 +1,7 @@
 Feature: Notification Feature
 
   Scenario Outline: <case_id>-User sees <notification> on the notification pop-up
-    Given user has opened Dashboard page
+    Given user has opened dashboard page
     When user clicks notification icon on the navigation bar
     Then user will be seen <notification> on the notification pop up
     
