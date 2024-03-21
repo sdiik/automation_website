@@ -24,8 +24,8 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 public class Notification {
-	@Given("user has opened Dashboard page")
-	public void user_has_opened_Dashboard_page() {
+	@Given("user has opened dashboard page")
+	public void user_has_opened_dashboard_page() {
 		WebUI.openBrowser('https://secondhand.binaracademy.org/users/sign_in')
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Login Page/TextArea_email'), 0)
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Login Page/TextArea_password'), 0)
@@ -46,11 +46,11 @@ public class Notification {
 	@Then("user will be seen (.*) on the notification pop up")
 	public void user_will_be_seen_on_the_notification_pop_up(String notification) {
 		if(notification==" negotiated product notification") {
-			WebUI.waitForElementPresent(findTestObject('Object Repository/Notification page/Notification_penawaranproduk                sepatu lariRp 15.777Ditawar Rp 14.400                            03 Feb, 0945'), 0)
-			WebUI.verifyElementPresent(findTestObject('Object Repository/Notification page/Notification_penawaranproduk                sepatu lariRp 15.777Ditawar Rp 14.400                            03 Feb, 0945'), 0)
+			WebUI.waitForElementPresent(findTestObject('Object Repository/Notification page/notification_penawaranproduk'), 0)
+			WebUI.verifyElementPresent(findTestObject('Object Repository/Notification page/notification_penawaranproduk'), 0)
 		}else if(notification==" published product notification")
-			WebUI.waitForElementPresent(findTestObject('Object Repository/Notification page/Notification_berhasilditerbitkan                1Rp 1                            05 Feb, 1830'), 0)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Notification page/Notification_berhasilditerbitkan                1Rp 1                            05 Feb, 1830'), 0)
+			WebUI.waitForElementPresent(findTestObject('Object Repository/Notification page/notification_berhasilditerbitkan'), 0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Notification page/notification_berhasilditerbitkan'), 0)
 		
 		WebUI.closeBrowser()
 	}

@@ -1,37 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Notification_berhasilditerbitkan                1Rp 1                            05 Feb, 1830</name>
+   <name>notification_berhasilditerbitkan</name>
    <tag></tag>
-   <elementGuidId>ec116a98-2ad8-4c39-9d08-1da541e72bad</elementGuidId>
+   <elementGuidId>e1112cf6-b6e0-4d5d-8004-330279599be6</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>CSS</key>
-         <value>a.notification.my-4.px-2.position-relative</value>
-      </entry>
       <entry>
          <key>XPATH</key>
          <value>//div[@id='navbarSupportedContent']/div/ul/li[3]/ul/li/a</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = '
-                
-              
-                Berhasil di terbitkan
-                1Rp 1
-              
-              05 Feb, 18:30
-
-' or . = '
-                
-              
-                Berhasil di terbitkan
-                1Rp 1
-              
-              05 Feb, 18:30
-
-')]</value>
+         <key>CSS</key>
+         <value>a.notification.my-4.px-2.position-relative</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -49,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>2e1d2364-1dbd-4493-8717-9968156c98b1</webElementGuid>
+      <webElementGuid>b1ee41df-6f09-46a7-95c2-2bb5f4448c31</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -57,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>notification my-4 px-2 position-relative</value>
-      <webElementGuid>8269ba8f-109e-4c76-89ac-29004014a21b</webElementGuid>
+      <webElementGuid>0b925590-1dff-4c5e-94f0-287c6464c88a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -65,7 +45,7 @@
       <name>data-notification-id</name>
       <type>Main</type>
       <value>177232</value>
-      <webElementGuid>dc6e96de-3097-4d69-88bc-42996046509c</webElementGuid>
+      <webElementGuid>99564af8-fcc8-41ea-91e4-d3177ce90466</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -73,7 +53,7 @@
       <name>data-notification-read</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>5ed5bc62-02de-46b3-96f0-5b00ec78fea3</webElementGuid>
+      <webElementGuid>b55d114e-e6fa-45db-b977-8c69abcbd399</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -81,7 +61,7 @@
       <name>href</name>
       <type>Main</type>
       <value>/products/98886</value>
-      <webElementGuid>494f9ed3-bc4c-499d-a249-3c5d5c82d624</webElementGuid>
+      <webElementGuid>ae4dddd8-75d0-4301-b417-98ba91af448d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -97,7 +77,7 @@
               05 Feb, 18:30
 
 </value>
-      <webElementGuid>c0371805-58ec-498f-befe-3ba96865c9cb</webElementGuid>
+      <webElementGuid>58d5cde7-299f-4908-8d53-d32edfdf5602</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -105,7 +85,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;navbarSupportedContent&quot;)/div[@class=&quot;ms-auto&quot;]/ul[@class=&quot;navbar-nav&quot;]/li[@class=&quot;nav-item dropdown me-0 me-lg-2 fs-5 d-none d-xl-block position-relative&quot;]/ul[@class=&quot;dropdown-menu notification-dropdown-menu px-4 show&quot;]/li[1]/a[@class=&quot;notification my-4 px-2 position-relative&quot;]</value>
-      <webElementGuid>90d21005-3dd6-481e-a645-807d4f29da0f</webElementGuid>
+      <webElementGuid>e4deab29-c43b-46f1-b52b-eb71b7704f2a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -113,7 +93,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='navbarSupportedContent']/div/ul/li[3]/ul/li/a</value>
-      <webElementGuid>ed0af70f-a72c-4f18-b548-cb2fb5802f89</webElementGuid>
+      <webElementGuid>9310651e-0746-4385-b92a-5690615baed3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -121,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='New alerts'])[2]/following::a[1]</value>
-      <webElementGuid>6dbb3d16-f16a-42a7-9a2c-0ba926ed3dd7</webElementGuid>
+      <webElementGuid>464c71c0-8eba-4839-93ef-3f47207fa67d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -129,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='New alerts'])[1]/following::a[2]</value>
-      <webElementGuid>efc7d294-9583-4f54-bc53-19cf45b53a4a</webElementGuid>
+      <webElementGuid>161921dd-cc5e-445a-9022-be93028f851f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -137,7 +117,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Penawaran produk'])[1]/preceding::a[1]</value>
-      <webElementGuid>a964b893-dd09-4448-a9b0-a00598dba60f</webElementGuid>
+      <webElementGuid>24d416e4-7005-473b-a905-2142f710f2c1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -145,7 +125,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, '/products/98886')]</value>
-      <webElementGuid>89df17ec-e287-4d85-8e88-d01b37de09e7</webElementGuid>
+      <webElementGuid>aeaca113-9d46-4b14-9e88-57ebf25d0392</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -153,7 +133,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[3]/ul/li/a</value>
-      <webElementGuid>1d69337b-e253-4f93-aa76-182429dc1dff</webElementGuid>
+      <webElementGuid>1f20bde3-d80d-4c4f-9a09-5551142e6796</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -177,6 +157,6 @@
               05 Feb, 18:30
 
 ')]</value>
-      <webElementGuid>bc2a4c54-f346-4eac-9a20-4fd40c8b2465</webElementGuid>
+      <webElementGuid>3ac65735-dcd0-4fd1-b3ab-aba766aa3c05</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
