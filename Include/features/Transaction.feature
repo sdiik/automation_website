@@ -1,3 +1,4 @@
+@Transaction
 Feature: transaction feature
 
   ######################BUYER TRANSACTION#################################

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>User can succesfully login</name>
+   <name>Cucumber</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>add3b35e-0d42-4361-a29f-4faad9a19c00</testCaseGuid>
+   <testCaseGuid>fec425b7-3d83-4995-a940-bd9f95f0d7f1</testCaseGuid>
 </TestCaseEntity>

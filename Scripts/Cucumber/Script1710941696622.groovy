@@ -17,15 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://secondhand.binaracademy.org/users/sign_in')
-WebUI.setText(findTestObject('Object Repository/Login Page/TextArea_email'), 'ArchiTest1@mail.com')
-WebUI.setText(findTestObject('Object Repository/Login Page/TextArea_password'), '123')
-WebUI.click(findTestObject('Object Repository/Login Page/btn_loginCommit'))
+CucumberKW.runWithCucumberRunner(Runner.class)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Homepage/btn_jual'), 0)
-WebUI.verifyElementPresent(findTestObject('Object Repository/Homepage/btn_jual'), 0)
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Homepage/TextArea_search'), 0)
-WebUI.verifyElementPresent(findTestObject('Object Repository/Homepage/TextArea_search'), 0)
-
-WebUI.closeBrowser()

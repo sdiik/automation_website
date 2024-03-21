@@ -1,3 +1,4 @@
+@SearchProducts
 Feature: Web get a search products feature
 
   @Positive
@@ -8,7 +9,7 @@ Feature: Web get a search products feature
     Then user will successfully get list of products based on the correct keywords
 
   @Negative
-  Scenario: TC.WEB.30-User can gets list of products based on uncorrect keyword in the search
+  Scenario: TC.WEB.30-User cannot gets list of products based on uncorrect keyword in the search
     Given user has opened homepage
     When user input characters in search field
     When user enter button in keyboard

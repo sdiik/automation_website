@@ -1,3 +1,4 @@
+@Authorization
 Feature: Login Feature, Register Feature, and Logout Feature
 
 Scenario Outline: <case_id>-User <result> successfully login

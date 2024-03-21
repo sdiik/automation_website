@@ -1,3 +1,4 @@
+@CRUDProduct
 Feature: CRUD feature
 
   Background: user already login
