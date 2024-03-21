@@ -7,6 +7,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory
+import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testcase.TestCase
@@ -44,7 +45,7 @@ import cucumber.api.java.en.When
 
 
 
-class CRUDProduct {
+public class CRUDProduct {
 	//Post and preview page
 	@Given("user has opened selling page")
 	public void user_has_opened_selling_page() {
@@ -61,7 +62,7 @@ class CRUDProduct {
 		WebUI.setText(findTestObject('Object Repository/Post Product Page/TextBox_hargaProduk'), '1000')
 		WebUI.selectOptionByValue(findTestObject('Object Repository/Post Product Page/select_pilihKategori'), '2', false)
 		WebUI.setText(findTestObject('Object Repository/Post Product Page/TextBox_deskripsiProduk'), 'barang bekas')
-		WebUI.uploadFile(findTestObject('Object Repository/Post Product Page/img_formImage'), 'C:\\Users\\WINDOWS 10\\Downloads\\sapi.jpg')
+		WebUI.uploadFile(findTestObject('Object Repository/Post Product Page/img_formImage'), RunConfiguration.getProjectDir()+'/Asset/sapi.jpg')
 		WebUI.delay(1)
 		if(button=="terbitkan") {
 			WebUI.click(findTestObject('Object Repository/Post Product Page/btn_terbitkan'))
@@ -91,14 +92,13 @@ class CRUDProduct {
 		WebUI.setText(findTestObject('Object Repository/Post Product Page/TextBox_hargaProduk'), '1000')
 		WebUI.selectOptionByLabel(findTestObject('Object Repository/Post Product Page/select_pilihKategori'), 'Pilih Kategori', false)
 		WebUI.setText(findTestObject('Object Repository/Post Product Page/TextBox_deskripsiProduk'), 'barang bekas')
-		WebUI.uploadFile(findTestObject('Object Repository/Post Product Page/img_formImage'), 'C:\\Users\\WINDOWS 10\\Downloads\\sapi.jpg')
+		WebUI.uploadFile(findTestObject('Object Repository/Post Product Page/img_formImage'), RunConfiguration.getProjectDir()+'/Asset/sapi.jpg')
 		WebUI.click(findTestObject('Object Repository/Post Product Page/btn_terbitkan'))
 	}
 
 	@Then("user will fail post new product")
 	public void user_will_fail_post_new_product() {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Post Product Page/text_errorMessage_kategori'), 0)
-		WebUI.closeBrowser()
 	}
 	//user can edit product
 	@Given("user has opened edit product page")
@@ -131,7 +131,7 @@ class CRUDProduct {
 		WebUI.setText(findTestObject('Object Repository/Edit product page/TextBox_deskripsiProduk'), 'capybara dijual')
 		WebUI.click(findTestObject('Object Repository/Edit product page/btn_hapusImage'))
 		WebUI.verifyElementNotPresent(findTestObject('Object Repository/Edit product page/btn_hapusImage'), 0)
-		WebUI.uploadFile(findTestObject('Object Repository/Edit product page/img_formImage'), 'C:\\Users\\WINDOWS 10\\Downloads\\sapi.jpg')
+		WebUI.uploadFile(findTestObject('Object Repository/Edit product page/img_formImage'), RunConfiguration.getProjectDir()+'/Asset/sapi.jpg')
 		WebUI.click(findTestObject('Object Repository/Edit product page/btn_terbitkan'))
 	}
 	@Then("user successfully edit product")
@@ -152,8 +152,8 @@ class CRUDProduct {
 	@Then("user will fail save edit product")
 	public void user_will_fail_save_edit_product() {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Edit product page/text_errorMessage_namaProduk'), 0)
-		WebUI.closeBrowser()
 	}
+	
 	@Given("user go to Daftar Jual Saya page and has at least 1 published product")
 	public void user_go_to_Daftar_Jual_Saya_page_and_has_at_least_1_published_product() {
 		WebUI.click(findTestObject('Object Repository/Homepage/btn_daftarJual'))

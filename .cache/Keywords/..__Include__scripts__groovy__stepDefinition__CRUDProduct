@@ -1,8 +1,8 @@
 {
-  "keywordFileContentHash": "766B58C8C3CCE58230900DCB8886975C",
+  "keywordFileContentHash": "E26FFA330C63F90EB428817224919189",
   "keywordClasses": [
     {
-      "name": "CRUDProduct",
+      "name": "stepDefinition.CRUDProduct",
       "keywordMethods": []
     }
   ],
