@@ -48,10 +48,10 @@ public class Notification {
 		if(notification==" negotiated product notification") {
 			WebUI.waitForElementPresent(findTestObject('Object Repository/Notification page/notification_penawaranproduk'), 0)
 			WebUI.verifyElementPresent(findTestObject('Object Repository/Notification page/notification_penawaranproduk'), 0)
-		}else if(notification==" published product notification")
+		}else if(notification==" published product notification") {
 			WebUI.waitForElementPresent(findTestObject('Object Repository/Notification page/notification_berhasilditerbitkan'), 0)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Notification page/notification_berhasilditerbitkan'), 0)
-		
-		WebUI.closeBrowser()
+			WebUI.verifyElementPresent(findTestObject('Object Repository/Notification page/notification_berhasilditerbitkan'), 0)
+		}
+			WebUI.closeBrowser()
+		}
 	}
-}
