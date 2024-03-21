@@ -9,4 +9,4 @@ Scenario Outline: <case_id>-User can go to the <page> page in Dashboard
       | case_id    | where   				 	 | button   | page    |
       | TC.WEB.8   | on the first      | next		  | next    |
       | TC.WEB.9   | not in the first  | previous | previous|
-
+      
