@@ -61,6 +61,7 @@ public class SoldProduct {
 	@Given("seller already in list product page")
 	public void seller_already_in_list_product_page() {
 		WebUI.openBrowser('https://secondhand.binaracademy.org/users/sign_in')
+		WebUI.maximizeWindow()
 		WebUI.setText(txtEmail,'test@testing.com')
 		WebUI.setText(txtPassword,'testing')
 		WebUI.click(btnLogin)

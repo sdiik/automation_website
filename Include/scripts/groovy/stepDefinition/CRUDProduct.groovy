@@ -153,7 +153,7 @@ public class CRUDProduct {
 	public void user_will_fail_save_edit_product() {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Edit product page/text_errorMessage_namaProduk'), 0)
 	}
-	
+
 	@Given("user go to Daftar Jual Saya page and has at least 1 published product")
 	public void user_go_to_Daftar_Jual_Saya_page_and_has_at_least_1_published_product() {
 		WebUI.click(findTestObject('Object Repository/Homepage/btn_daftarJual'))
@@ -175,7 +175,8 @@ public class CRUDProduct {
 
 	@When("user click one of the desired product in Homepage")
 	public void user_click_one_of_the_desired_product_in_Homepage() {
-		WebUI.click(findTestObject('Object Repository/Homepage/card_product'))
+		WebUI.scrollToElement(findTestObject('Object Repository/Homepage/card_product_10'), 0)
+		WebUI.click(findTestObject('Object Repository/Homepage/card_product_10'))
 	}
 
 	@Then("product will be deleted and user will be redirected back to Daftar Jual Saya page")
