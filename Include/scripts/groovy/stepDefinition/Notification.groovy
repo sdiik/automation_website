@@ -52,6 +52,6 @@ public class Notification {
 			WebUI.waitForElementPresent(findTestObject('Object Repository/Notification page/notification_berhasilditerbitkan'), 0)
 			WebUI.verifyElementPresent(findTestObject('Object Repository/Notification page/notification_berhasilditerbitkan'), 0)
 		}
-			WebUI.closeBrowser()
-		}
+		WebUI.closeBrowser()
 	}
+}
