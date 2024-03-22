@@ -29,6 +29,6 @@ Feature: Login Feature, Register Feature, and Logout Feature
       | TC.WEB.7   | invalid		| email    | can not |
 
 	Scenario: TC.WEB.10-User Logout to exit current session
-	  Given user can successfully login to the website
+	  Given user login to the website
 		When user click Profile button
 		Then user click Logout button
