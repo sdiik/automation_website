@@ -52,11 +52,15 @@ public class AccountInfo {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Homepage/btn_profile'),0)
 	}
 
-	@Given("user already in the Account Info page from Homepage")
-	public void user_already_in_the_Account_Info_page_from_Homepage() {
-		WebUI.click(findTestObject('Object Repository/Homepage/btn_profile'))
-		WebUI.click(findTestObject('Object Repository/Homepage/btn_accountInfo'))
-
+	@Given("user already in the Account Info page from (.*)")
+	public void user_already_in_the_Account_Info_page_from(String page) {
+		if(page=="Homepage") {
+			WebUI.click(findTestObject('Object Repository/Homepage/btn_profile'))
+			WebUI.click(findTestObject('Object Repository/Homepage/btn_accountInfo'))
+		}else if(page=="Daftar Jual Saya page") {
+			WebUI.click(findTestObject('Object Repository/Homepage/btn_daftarJual'))
+			WebUI.click(findTestObject('Object Repository/Daftar Jual Page/btn_edit'))
+		}
 		WebUI.waitForElementPresent(findTestObject('Object Repository/Account Info Page/text_accountInfo'),0)
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Account Info Page/text_accountInfo'),0)
 
@@ -64,20 +68,8 @@ public class AccountInfo {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Account Info Page/TextArea_nama'),0)
 	}
 
-	@Given("user already in the Account Info page from Daftar Jual Saya page")
-	public void user_already_in_the_Account_Info_page_from_Daftar_Jual_Saya_page() {
-		WebUI.click(findTestObject('Object Repository/Homepage/btn_daftarJual'))
-		WebUI.click(findTestObject('Object Repository/Daftar Jual Page/btn_edit'))
-
-		WebUI.waitForElementPresent(findTestObject('Object Repository/Account Info Page/text_accountInfo'),0)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Account Info Page/text_accountInfo'),0)
-
-		WebUI.waitForElementPresent(findTestObject('Object Repository/Account Info Page/TextArea_nama'),0)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Account Info Page/TextArea_nama'),0)
-	}
-
-	@Given("user already in the Account Info page from clicking Jual button")
-	public void user_already_in_the_Account_Info_page_from_clicking_Jual_button() {
+	@Given("user redirected to Account Info from clicking Jual button")
+	public void user_redirected_to_Account_Info_from_clicking_Jual_button() {
 		WebUI.click(findTestObject('Object Repository/Homepage/btn_jual'))
 
 		WebUI.waitForElementPresent(findTestObject('Object Repository/Account Info Page/text_accountInfo'),0)
