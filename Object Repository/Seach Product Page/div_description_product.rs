@@ -13,8 +13,12 @@
          <key>XPATH</key>
          <value>//div[@id='products']/div/a/div/div</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
@@ -29,15 +33,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>316211bb-f0db-4995-b643-a141f4466e80</webElementGuid>
+      <webElementGuid>32b71337-2919-47f5-9203-9be59d484b5f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>card-body text-decoration-none</value>
-      <webElementGuid>bc3574c7-225f-49fb-aa68-3edd83fb6843</webElementGuid>
+      <webElementGuid>0f025270-cc90-4524-9db0-7362a8de8be9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -49,7 +53,7 @@
       Kendaraan
       Rp 900.000
     </value>
-      <webElementGuid>028c068e-de1f-4df1-b059-42d19db865c3</webElementGuid>
+      <webElementGuid>73d2aa71-1e03-4302-ae0f-70368da327e5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -57,7 +61,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;products&quot;)/div[@class=&quot;col-12 col-md-4 col-lg-3&quot;]/a[@class=&quot;product-card&quot;]/div[@class=&quot;card px-0 border-0 shadow h-100 pb-4 rounded-4&quot;]/div[@class=&quot;card-body text-decoration-none&quot;]</value>
-      <webElementGuid>7214851b-076a-4581-9f0f-b0e164c84c47</webElementGuid>
+      <webElementGuid>16460d34-b1bc-4c73-b79c-523057e9a78d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -65,7 +69,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='products']/div/a/div/div</value>
-      <webElementGuid>22c65359-6b48-47c0-a56a-9c2c5c288445</webElementGuid>
+      <webElementGuid>b7e129c7-182f-4be1-a72a-b158d3597835</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -73,7 +77,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//a/div/div</value>
-      <webElementGuid>8553af02-e6e7-41a8-a991-223fc47e0f21</webElementGuid>
+      <webElementGuid>9274b22d-d6c2-4e85-97b2-29ec33197c3e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -89,6 +93,6 @@
       Kendaraan
       Rp 900.000
     ')]</value>
-      <webElementGuid>307dc28f-ea4e-4ca7-8715-5a6cc4fc4793</webElementGuid>
+      <webElementGuid>62f2a174-402a-4dfb-b3a6-282cbcce724d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

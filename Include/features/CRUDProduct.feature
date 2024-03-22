@@ -3,7 +3,7 @@ Feature: CRUD feature
 
   Background: user already login
     Given user on the Login page
-    When user input valid value in the all field in the Login page
+    When user input valid values in the all field in the Login page
     Then user can successfully login
 
   @positive

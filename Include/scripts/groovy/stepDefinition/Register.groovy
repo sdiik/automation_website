@@ -27,6 +27,7 @@ public class Register {
 	@Given("user has opened register page")
 	public void user_has_opened_register_page() {
 		WebUI.openBrowser('https://secondhand.binaracademy.org/users/sign_up')
+		WebUI.maximizeWindow()
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Register page/TextBox_name'), 0)
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Register page/TextBox_email'), 0)
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Register page/TextBox_password'), 0)
