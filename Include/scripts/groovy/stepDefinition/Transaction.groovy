@@ -43,7 +43,7 @@ public class Transaction {
 		RandomNumber = (int)(Math.random()*1000)
 
 		WebUI.setText(findTestObject('Object Repository/Register page/TextBox_name'), 'Archi')
-		WebUI.setText(findTestObject('Object Repository/Register page/TextBox_email'), 'Archi'+RandomNumber+'@mail.com')
+		WebUI.setText(findTestObject('Object Repository/Register page/TextBox_email'), 'ArchiNew'+RandomNumber+'@mail.com')
 		WebUI.setText(findTestObject('Object Repository/Register page/TextBox_password'), '123')
 		WebUI.click(findTestObject('Object Repository/Register page/btn_daftar'))
 	}

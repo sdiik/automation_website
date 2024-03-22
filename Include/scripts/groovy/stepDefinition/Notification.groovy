@@ -27,6 +27,7 @@ public class Notification {
 	@Given("user has opened dashboard page")
 	public void user_has_opened_dashboard_page() {
 		WebUI.openBrowser('https://secondhand.binaracademy.org/users/sign_in')
+		WebUI.maximizeWindow()
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Login Page/TextArea_email'), 0)
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Login Page/TextArea_password'), 0)
 		WebUI.setText(findTestObject('Object Repository/Login Page/TextArea_email'), 'kiranakalyanakretya@gmail.com')
@@ -52,6 +53,6 @@ public class Notification {
 			WebUI.waitForElementPresent(findTestObject('Object Repository/Notification page/notification_berhasilditerbitkan'), 0)
 			WebUI.verifyElementPresent(findTestObject('Object Repository/Notification page/notification_berhasilditerbitkan'), 0)
 		}
-			WebUI.closeBrowser()
-		}
+		WebUI.closeBrowser()
 	}
+}

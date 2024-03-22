@@ -51,6 +51,7 @@ public class SearchProductByCategory {
 	@Given("user has opened homepage")
 	public void user_has_opened_homepage() {
 		WebUI.openBrowser('https://secondhand.binaracademy.org/')
+		WebUI.maximizeWindow()
 	}
 
 	@When("user select and press the (.*) button in the category filter")

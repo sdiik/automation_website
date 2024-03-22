@@ -26,5 +26,5 @@ Feature: Account Info Feature
   Scenario: TC.WEB.24-User tries to input the required files with empty value
     Given user can successfully login to the website
     And user already in the Account Info page from Homepage
-    When user fill all the required data with empty value and submit the data in the Account Info page
+    When user fill all the required data with empty values and submit the data in the Account Info page
     Then users Account Info will not be updated and user will be remain at Account Info page

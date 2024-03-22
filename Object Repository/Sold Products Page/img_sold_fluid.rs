@@ -6,15 +6,19 @@
    <elementGuidId>a9d7f7c6-9c80-4469-86da-35387e449b57</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>img.img-fluid</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//div[2]/div/div/div/img</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>img.img-fluid</value>
+         <key>BASIC</key>
+         <value>//*[@src = '/empty-product.svg']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
@@ -29,7 +33,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>d59962f7-73b7-4aa9-af93-acbd6de5aeb6</webElementGuid>
+      <webElementGuid>d011dfbb-d46b-4bf1-9f17-86cdf77e2a6c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +41,7 @@
       <name>class</name>
       <type>Main</type>
       <value>img-fluid</value>
-      <webElementGuid>17555450-d079-4dfa-9177-fc803ffb0e53</webElementGuid>
+      <webElementGuid>2b5d324d-675a-466d-99e2-8c059a4dbf92</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +49,7 @@
       <name>src</name>
       <type>Main</type>
       <value>/empty-product.svg</value>
-      <webElementGuid>7d018432-282d-4e1e-ad01-cae1b1db1f43</webElementGuid>
+      <webElementGuid>1ae01369-d867-42b0-8ce9-27acd62c7c8b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +57,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/section[@class=&quot;pt-5 mt-5&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;row my-5&quot;]/div[@class=&quot;col-12 col-lg-9 mt-5 mt-lg-0&quot;]/div[@class=&quot;row g-4&quot;]/div[@class=&quot;d-flex flex-column justify-content-center align-items-center&quot;]/div[@class=&quot;container d-flex flex-column justify-content-center align-items-center&quot;]/img[@class=&quot;img-fluid&quot;]</value>
-      <webElementGuid>c84e2ee7-da24-4d33-8c8d-e262cf23317e</webElementGuid>
+      <webElementGuid>1c513832-22c6-4db0-9224-164f3a7b42b7</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +65,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/div/img</value>
-      <webElementGuid>1dc3421f-e3ab-4351-8e3e-08f4d453e4c1</webElementGuid>
+      <webElementGuid>da90a1b8-ab6c-482c-9dba-4be5577bfb92</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,6 +73,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@src = '/empty-product.svg']</value>
-      <webElementGuid>a4b59d4e-f118-42af-b2d9-65b0715d0e7c</webElementGuid>
+      <webElementGuid>21d68640-b934-45a6-9407-d4ec4472380b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

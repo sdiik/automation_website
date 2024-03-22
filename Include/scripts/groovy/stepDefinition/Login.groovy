@@ -28,11 +28,12 @@ public class Login {
 	@Given("user on the Login page")
 	public void user_on_the_login_page() {
 		WebUI.openBrowser('https://secondhand.binaracademy.org/users/sign_in')
+		WebUI.maximizeWindow()
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Login Page/TextArea_email'), 0)
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Login Page/TextArea_password'), 0)
 	}
 
-	@When("user input (.*) value in the (.*) field in the Login page")
+	@When("user input (.*) values in the (.*) field in the Login page")
 	public void user_input_value_in_the_field_in_the_Login_page(String condition, fields) {
 		if(condition=="valid" && fields=="all") {
 			WebUI.setText(findTestObject('Object Repository/Login Page/TextArea_email'),'sandra100@gmail.com')

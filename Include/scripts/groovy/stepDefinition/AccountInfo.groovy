@@ -8,6 +8,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
+import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling
@@ -30,6 +31,7 @@ public class AccountInfo {
 		RandomNumber = (int)(Math.random()*1000)
 
 		WebUI.openBrowser('https://secondhand.binaracademy.org/users/sign_up')
+		WebUI.maximizeWindow()
 		WebUI.setText(findTestObject('Object Repository/Register page/TextBox_name'), 'Shella Test'+RandomNumber)
 		WebUI.setText(findTestObject('Object Repository/Register page/TextBox_email'), 'shellatest'+RandomNumber+'@gmail.com')
 		WebUI.setText(findTestObject('Object Repository/Register page/TextBox_password'), 'testing')
@@ -39,6 +41,7 @@ public class AccountInfo {
 	@Given("user can successfully login to the website")
 	public void user_can_successfully_login_to_the_website() {
 		WebUI.openBrowser('https://secondhand.binaracademy.org/users/sign_in')
+		WebUI.maximizeWindow()
 		WebUI.setText(findTestObject('Object Repository/Login Page/TextArea_email'),'test@testing.com')
 		WebUI.setText(findTestObject('Object Repository/Login Page/TextArea_password'),'testing')
 		WebUI.click(findTestObject('Object Repository/Login Page/btn_loginCommit'))
@@ -86,7 +89,7 @@ public class AccountInfo {
 
 	@When("user can fill all the required data and submit the data in the Account Info page")
 	public void user_can_fill_all_the_required_data_and_submit_the_data_in_the_Account_Info_page() {
-		WebUI.uploadFile(findTestObject('Object Repository/Account Info Page/btn_profilePicture'), 'C:\\Users\\Administrator\\Pictures\\test_photo.jpg')
+		WebUI.uploadFile(findTestObject('Object Repository/Account Info Page/btn_profilePicture'), RunConfiguration.getProjectDir() + '/Asset/milkcat.PNG')
 		WebUI.setText(findTestObject('Object Repository/Account Info Page/TextArea_nama'),'edit automate nama')
 		WebUI.selectOptionByIndex(findTestObject('Object Repository/Account Info Page/dropdown_kota'), 2)
 		WebUI.setText(findTestObject('Object Repository/Account Info Page/TextArea_alamat'),'edit automate alamat')
@@ -94,7 +97,7 @@ public class AccountInfo {
 		WebUI.click(findTestObject('Object Repository/Account Info Page/btn_submit'))
 	}
 
-	@When("user fill all the required data with empty value and submit the data in the Account Info page")
+	@When("user fill all the required data with empty values and submit the data in the Account Info page")
 	public void user_fill_all_the_required_data_with_empty_value_and_submit_the_data_in_the_Account_Info_page() {
 		WebUI.setText(findTestObject('Object Repository/Account Info Page/TextArea_nama'),'')
 		WebUI.selectOptionByIndex(findTestObject('Object Repository/Account Info Page/dropdown_kota'), 2)
