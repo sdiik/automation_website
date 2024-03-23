@@ -92,10 +92,8 @@ public class SoldProduct {
 
 	@Then("seller will unsuccessfull gets list of products sold")
 	public void seller_will_unsuccessfull_gets_list_of_products_sold() {
-		WebUI.waitForElementPresent(imgSoldFluid,0)
-		WebUI.waitForElementPresent(txtNotHaveSoldProduct,0)
-		WebUI.verifyElementPresent(imgSoldFluid,0)
-		WebUI.verifyElementPresent(txtNotHaveSoldProduct,0)
+		WebUI.waitForElementNotPresent(imgSoldFluid, 0)
+		WebUI.waitForElementNotPresent(txtNotHaveSoldProduct, 0)
 		WebUI.closeBrowser()
 	}
 }
