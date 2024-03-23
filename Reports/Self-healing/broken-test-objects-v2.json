@@ -1,0 +1,60 @@
+{
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Account Info Page/TextArea_nama",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "//div[2]/input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Account Info Page/TextArea_nama_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Homepage/bottom_element",
+      "brokenLocator": "//*[@class \u003d \u0027d-flex gap-4 align-items-center justify-content-center my-5\u0027]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "//div[@id\u003d\u0027products\u0027]/div[11]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Homepage/bottom_element_XPATH.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Sold Products Page/img_sold_fluid",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "internal:role\u003dimg \u003e\u003e nth\u003d1",
+      "proposedLocatorMethod": "SMART_LOCATOR",
+      "recoveryMethod": "SMART_LOCATOR",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Sold Products Page/img_sold_fluid_SMART_LOCATOR.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Sold Products Page/text_not_have_sold_product",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Terjual\u0027])[1]/following::p[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Sold Products Page/text_not_have_sold_product_XPATH.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Preview page/btn_tertarik",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Jogja\u0027])[2]/preceding::button[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Sold Products Page/img_sold_fluid",
+      "brokenLocator": "//div[2]/div/div/div/img",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "internal:role\u003dimg \u003e\u003e nth\u003d1",
+      "proposedLocatorMethod": "SMART_LOCATOR",
+      "recoveryMethod": "SMART_LOCATOR",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Sold Products Page/img_sold_fluid_SMART_LOCATOR.png"
+    }
+  ]
+}
