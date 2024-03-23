@@ -20,7 +20,7 @@ Feature: Login Feature, Register Feature, and Logout Feature
  
   Scenario Outline: <case_id>-User <result> successfully login
     Given user on the Login page
-    When user input <condition> value in the <fields> field in the Login page
+    When user input <condition> values in the <fields> field in the Login page
     Then user <result> successfully login
 
     Examples: 
