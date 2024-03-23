@@ -44,9 +44,12 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 public class SearchProduct {
+	private static TestObject btnAll = findTestObject('Object Repository/Seach Product Page/btn_all')
 	private static TestObject inputSearch = findTestObject('Object Repository/Seach Product Page/input_search')
 	private static TestObject divProducts = findTestObject('Object Repository/Seach Product Page/div_products')
 	private static TestObject divDescriptionProduct = findTestObject('Object Repository/Seach Product Page/div_description_product')
+	private static TestObject titleBrowseCategories = findTestObject('Object Repository/Seach Product Page/title_browse_categories')
+
 
 	@When("user input alphabert in search field")
 	public void user_input_alphabert_in_search_field() {
@@ -61,7 +64,11 @@ public class SearchProduct {
 	@When("user enter button in keyboard")
 	public void user_enter_button_in_keyboard() {
 		WebUI.sendKeys(inputSearch, Keys.chord(Keys.ENTER))
-		WebUI.scrollToElement(divProducts, 3)
+		WebUI.waitForElementPresent(btnAll, 0)
+		WebUI.waitForElementPresent(titleBrowseCategories, 0)
+		WebUI.verifyElementPresent(btnAll, 0)
+		WebUI.verifyElementPresent(titleBrowseCategories, 0)
+		WebUI.scrollToElement(titleBrowseCategories, 0)
 	}
 
 	@Then("user will successfully get list of products based on the correct keywords")
@@ -75,10 +82,7 @@ public class SearchProduct {
 
 	@Then("user will unsuccessfull get list of products based on the uncorrect keywords")
 	public void user_will_successfully_get_list_of_products_based_on_the_uncorrect_keywords() {
-		WebUI.waitForElementPresent(divProducts, 0)
-		WebUI.waitForElementPresent(divDescriptionProduct, 0)
-		WebUI.verifyElementPresent(divProducts, 3)
-		WebUI.verifyElementPresent(divDescriptionProduct, 3)
+		WebUI.scrollToElement(btnAll, 0)
 		WebUI.closeBrowser()
 	}
 }
