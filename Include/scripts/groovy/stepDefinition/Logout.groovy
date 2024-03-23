@@ -30,6 +30,7 @@ public class Logout {
 	@Given("user login to the website")
 	public void user_login_to_the_website() {
 		WebUI.openBrowser('https://secondhand.binaracademy.org/users/sign_in')
+		WebUI.maximizeWindow()
 		WebUI.setText(findTestObject('Object Repository/Login Page/TextArea_email'),'test@testing.com')
 		WebUI.setText(findTestObject('Object Repository/Login Page/TextArea_password'),'testing')
 		WebUI.click(findTestObject('Object Repository/Login Page/btn_loginCommit'))

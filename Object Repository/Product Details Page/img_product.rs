@@ -13,8 +13,13 @@
          <key>XPATH</key>
          <value>//div[@id='productImage']/div/div/img</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;productImage&quot;)/div[@class=&quot;carousel-inner&quot;]/div[@class=&quot;carousel-item active&quot;]/img[@class=&quot;w-100&quot;]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +27,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>80d670d1-57d1-4a3a-b136-df711b069d5d</webElementGuid>
+      <webElementGuid>83c66186-df31-412a-9538-18bc7432f9cd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +35,7 @@
       <name>class</name>
       <type>Main</type>
       <value>w-100</value>
-      <webElementGuid>05a78b6f-1ff8-4538-815f-bb43fd89f0dd</webElementGuid>
+      <webElementGuid>11ad0ba9-60d7-4fa8-84eb-d199149ec641</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,15 +43,15 @@
       <name>src</name>
       <type>Main</type>
       <value>https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeElRQ0E9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--65f4ed253fefbad03bb829b982adcc591ba21180/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lKYW5CbFp3WTZCa1ZVT2hSeVpYTnBlbVZmZEc5ZmJHbHRhWFJiQjJrQ0FBUnBBZ0FFIiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--c1007dd5afa2c523bd00c027bd264710678cb69b/sapi.jpeg</value>
-      <webElementGuid>af5380f9-63a0-414c-91cd-07261ef26b52</webElementGuid>
+      <webElementGuid>5e7bb23c-fcc5-4cd3-9446-2295a05cc6e0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;productImage&quot;)/div[@class=&quot;carousel-inner&quot;]/div[@class=&quot;carousel-item active&quot;]/img[@class=&quot;w-100&quot;]</value>
-      <webElementGuid>1c172cd9-8303-49d4-b45b-516f8533fa86</webElementGuid>
+      <webElementGuid>76a505cc-5339-4bd7-ac8b-c9aed6d5574a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +59,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='productImage']/div/div/img</value>
-      <webElementGuid>ad063af2-a424-424a-a790-789328576fc9</webElementGuid>
+      <webElementGuid>5bdb7e56-99ed-4870-9c30-f8aed1d326cc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +67,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>//img[contains(@src,'https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeElRQ0E9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--65f4ed253fefbad03bb829b982adcc591ba21180/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lKYW5CbFp3WTZCa1ZVT2hSeVpYTnBlbVZmZEc5ZmJHbHRhWFJiQjJrQ0FBUnBBZ0FFIiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--c1007dd5afa2c523bd00c027bd264710678cb69b/sapi.jpeg')]</value>
-      <webElementGuid>9dffd327-fd80-49ce-b877-796e445589f0</webElementGuid>
+      <webElementGuid>be947736-250d-4789-ac17-6f49cbc24512</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +75,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/div/img</value>
-      <webElementGuid>b8e6d6f9-c2bc-4666-a734-eb08d5ff6461</webElementGuid>
+      <webElementGuid>7b8db92d-9201-4f20-8b14-0440d61267cc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,6 +83,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@src = 'https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeElRQ0E9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--65f4ed253fefbad03bb829b982adcc591ba21180/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lKYW5CbFp3WTZCa1ZVT2hSeVpYTnBlbVZmZEc5ZmJHbHRhWFJiQjJrQ0FBUnBBZ0FFIiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--c1007dd5afa2c523bd00c027bd264710678cb69b/sapi.jpeg']</value>
-      <webElementGuid>acbe8676-5a69-448b-a4ad-139ca46c1faf</webElementGuid>
+      <webElementGuid>b5bc0648-474c-4f27-95eb-1dc1144271e1</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
