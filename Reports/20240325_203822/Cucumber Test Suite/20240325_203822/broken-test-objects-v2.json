@@ -1,0 +1,14 @@
+{
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Homepage/bottom_element",
+      "brokenLocator": "//*[@class \u003d \u0027d-flex gap-4 align-items-center justify-content-center my-5\u0027]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "//div[@id\u003d\u0027products\u0027]/div[11]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/20240325_203822/Cucumber Test Suite/20240325_203822/Object Repository/Homepage/bottom_element_XPATH.png"
+    }
+  ]
+}
