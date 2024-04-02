@@ -7,7 +7,8 @@
    <createdVersion>9.3.1</createdVersion>
    <freeLicense>false</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
-   <modifiedVersion>9.3.1</modifiedVersion>
+   <modifiedEdition>ENTERPRISE</modifiedEdition>
+   <modifiedVersion>9.3.2</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
    <projectFileLocation>C:\Users\archi_000\Katalon Studio\Challenge_Kelompok_1_Web_Platinum\Challenge_Kelompok_1_Web_Platinum.prj</projectFileLocation>
    <sourceContent>

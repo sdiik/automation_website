@@ -6,19 +6,19 @@
    <elementGuidId>3be3c2d6-b248-48eb-869d-fef5fc286508</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.d-flex.gap-4.align-items-center.justify-content-center.my-5</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='products']/div[11]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'd-flex gap-4 align-items-center justify-content-center my-5']</value>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.d-flex.gap-4.align-items-center.justify-content-center.my-5</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
@@ -33,7 +33,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='products']/div[11]</value>
-      <webElementGuid>a030ae42-3cf3-42f3-a3a6-028f7c819f59</webElementGuid>
+      <webElementGuid>9db39c32-5ccb-4fe1-bec8-982a14469e91</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -41,7 +41,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Rp 1.000.000.000.000.000'])[1]/following::div[1]</value>
-      <webElementGuid>84e91ce8-4f6e-4188-9bce-7de893fe75a7</webElementGuid>
+      <webElementGuid>fd075092-084b-4385-9e4d-2559a870204a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -49,7 +49,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='abc1'])[1]/following::div[1]</value>
-      <webElementGuid>49d985f9-56b6-4ee9-9b29-7d3b59b665a7</webElementGuid>
+      <webElementGuid>e8874aeb-2d82-47d8-8a22-8dde1f375a52</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -57,7 +57,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[11]</value>
-      <webElementGuid>9677c2fa-0d54-4f99-9b55-8cdc2b9c9bd3</webElementGuid>
+      <webElementGuid>666f8cc9-1e9f-4551-8552-8b9568fa8b61</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -65,6 +65,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = '← Previous Next →' or . = '← Previous Next →')]</value>
-      <webElementGuid>a5cacede-a0fd-4647-91df-408226ca4314</webElementGuid>
+      <webElementGuid>63d42a0c-fae2-40b2-a05b-c0e182fcc085</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
