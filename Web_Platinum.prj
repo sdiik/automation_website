@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
    <description></description>
-   <name>Challenge_Kelompok_1_Web_Platinum</name>
+   <name>Web_Platinum</name>
    <tag></tag>
    <UUID>6a2aa466-d3c5-4c58-bd3e-f9852bbe3e58</UUID>
    <createdVersion>9.3.1</createdVersion>
@@ -10,7 +10,7 @@
    <modifiedEdition>ENTERPRISE</modifiedEdition>
    <modifiedVersion>9.3.2</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>C:\Users\archi_000\Katalon Studio\Challenge_Kelompok_1_Web_Platinum\Challenge_Kelompok_1_Web_Platinum.prj</projectFileLocation>
+   <projectFileLocation>C:\Users\archi_000\Katalon Studio\Web_Platinum\Web_Platinum.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
