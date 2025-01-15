@@ -1,4 +1,4 @@
-# 23001065_18_K1_Challenge Kelompok 1 Web_Platinum
+Automation Website
 
 
 
@@ -15,14 +15,10 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.com/Archiandro/23001065_18_k1_challenge-kelompok-1-web_platinum.git
+git remote add origin this url
 git branch -M main
 git push -uf origin main
 ```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://gitlab.com/Archiandro/23001065_18_k1_challenge-kelompok-1-web_platinum/-/settings/integrations)
 
 ## Collaborate with your team
 
